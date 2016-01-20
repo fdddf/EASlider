@@ -13,6 +13,9 @@
 		043D93501C4E27490082D57B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D934E1C4E27490082D57B /* Main.storyboard */; };
 		043D93521C4E27490082D57B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D93511C4E27490082D57B /* Assets.xcassets */; };
 		043D93551C4E27490082D57B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D93531C4E27490082D57B /* LaunchScreen.storyboard */; };
+		043D935F1C4E28E10082D57B /* EASlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D935E1C4E28E10082D57B /* EASlider.m */; };
+		043D93621C4E2B820082D57B /* EAThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D93611C4E2B820082D57B /* EAThumb.m */; };
+		758A88478E2E7EAC51BA5587 /* libPods-EASlider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DB5ABC2BFDA5BDC0AE2F88 /* libPods-EASlider.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		043D93511C4E27490082D57B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043D93541C4E27490082D57B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043D93561C4E27490082D57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043D935D1C4E28E10082D57B /* EASlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EASlider.h; sourceTree = "<group>"; };
+		043D935E1C4E28E10082D57B /* EASlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EASlider.m; sourceTree = "<group>"; };
+		043D93601C4E2B820082D57B /* EAThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAThumb.h; sourceTree = "<group>"; };
+		043D93611C4E2B820082D57B /* EAThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAThumb.m; sourceTree = "<group>"; };
+		0C8DAE91FEBB010CBBF82540 /* Pods-EASlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EASlider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EASlider/Pods-EASlider.debug.xcconfig"; sourceTree = "<group>"; };
+		7ABAE13C1DD3343C7E0C525F /* Pods-EASlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EASlider.release.xcconfig"; path = "Pods/Target Support Files/Pods-EASlider/Pods-EASlider.release.xcconfig"; sourceTree = "<group>"; };
+		D2DB5ABC2BFDA5BDC0AE2F88 /* libPods-EASlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EASlider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758A88478E2E7EAC51BA5587 /* libPods-EASlider.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				043D93441C4E27490082D57B /* EASlider */,
 				043D93431C4E27490082D57B /* Products */,
+				AAA6A7C59E94D3F082307DFC /* Pods */,
+				410E9083BEBB6B6189F94007 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +71,7 @@
 		043D93441C4E27490082D57B /* EASlider */ = {
 			isa = PBXGroup;
 			children = (
+				043D935C1C4E28BE0082D57B /* Classes */,
 				043D93481C4E27490082D57B /* AppDelegate.h */,
 				043D93491C4E27490082D57B /* AppDelegate.m */,
 				043D934B1C4E27490082D57B /* ViewController.h */,
@@ -79,6 +93,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		043D935C1C4E28BE0082D57B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				043D935D1C4E28E10082D57B /* EASlider.h */,
+				043D935E1C4E28E10082D57B /* EASlider.m */,
+				043D93601C4E2B820082D57B /* EAThumb.h */,
+				043D93611C4E2B820082D57B /* EAThumb.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		410E9083BEBB6B6189F94007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB5ABC2BFDA5BDC0AE2F88 /* libPods-EASlider.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAA6A7C59E94D3F082307DFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C8DAE91FEBB010CBBF82540 /* Pods-EASlider.debug.xcconfig */,
+				7ABAE13C1DD3343C7E0C525F /* Pods-EASlider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043D93591C4E27490082D57B /* Build configuration list for PBXNativeTarget "EASlider" */;
 			buildPhases = (
+				57923AB132A5506E8801EC20 /* Check Pods Manifest.lock */,
 				043D933E1C4E27490082D57B /* Sources */,
 				043D933F1C4E27490082D57B /* Frameworks */,
 				043D93401C4E27490082D57B /* Resources */,
+				0A894D27DEEDD8F34D4FE77E /* Embed Pods Frameworks */,
+				917D3064B0BC00E81A339DA9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,13 +189,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A894D27DEEDD8F34D4FE77E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EASlider/Pods-EASlider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57923AB132A5506E8801EC20 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		917D3064B0BC00E81A339DA9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EASlider/Pods-EASlider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		043D933E1C4E27490082D57B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				043D934D1C4E27490082D57B /* ViewController.m in Sources */,
+				043D93621C4E2B820082D57B /* EAThumb.m in Sources */,
 				043D934A1C4E27490082D57B /* AppDelegate.m in Sources */,
+				043D935F1C4E28E10082D57B /* EASlider.m in Sources */,
 				043D93471C4E27490082D57B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +354,7 @@
 		};
 		043D935A1C4E27490082D57B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8DAE91FEBB010CBBF82540 /* Pods-EASlider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EASlider/Info.plist;
@@ -270,6 +366,7 @@
 		};
 		043D935B1C4E27490082D57B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ABAE13C1DD3343C7E0C525F /* Pods-EASlider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EASlider/Info.plist;
@@ -298,6 +395,7 @@
 				043D935B1C4E27490082D57B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
