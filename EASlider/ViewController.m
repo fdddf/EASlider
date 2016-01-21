@@ -38,6 +38,16 @@
         make.right.equalTo(@(-30));
         make.height.equalTo(@100);
     }];
+    
+    EASlider *slider2 = [[EASlider alloc] initWithFrame:CGRectMake(10, 64, 300, 120)];
+    slider2.progressColor = [UIColor blueColor];
+    slider2.selectedIndex = 1;
+    [slider2 setTitleLabels:[NSMutableArray arrayWithArray:@[
+                                                             [self labelWithFont:nil text:@"Poor"],
+                                                             [self labelWithFont:nil text:@"Good"],
+                                                             [self labelWithFont:nil text:@"Excellent"]
+                                                             ]]];
+    [self.view addSubview:slider2];
 }
 
 - (void)didReceiveMemoryWarning {

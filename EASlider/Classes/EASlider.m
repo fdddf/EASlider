@@ -20,7 +20,6 @@
 @interface EASlider ()
 {
     BOOL dragging;
-    CGFloat dragOffset;
 }
 @end
 
@@ -296,11 +295,10 @@
     CGPoint point = [panGesture locationInView:self];
     if (panGesture.state == UIGestureRecognizerStateBegan)
     {
-        if (CGRectContainsPoint(CGRectInset(self.thumb.frame, -40, -40) , point))
+        if (CGRectContainsPoint(CGRectInset(self.thumb.frame, -10, -10) , point))
         {
-            dragOffset = point.x - CGRectGetMinX(self.thumb.frame);
             dragging = YES;
-            [self moveThumbToPoint:CGPointMake(point.x - dragOffset, point.y)];
+            [self moveThumbToPoint:CGPointMake(point.x, point.y)];
         }
         
         return;
@@ -312,7 +310,7 @@
     
     if (panGesture.state == UIGestureRecognizerStateEnded || panGesture.state == UIGestureRecognizerStateChanged || panGesture.state == UIGestureRecognizerStateCancelled)
     {
-        [self moveThumbToPoint:CGPointMake(point.x - dragOffset, point.y)];
+        [self moveThumbToPoint:CGPointMake(point.x, point.y)];
         
         if (panGesture.state == UIGestureRecognizerStateEnded || panGesture.state == UIGestureRecognizerStateCancelled)
         {
